@@ -7,7 +7,7 @@
 //   note: 解説
 // ============================================================
 const APP_NAME = "Vocabulary L7-L14";
-const LOG_URL = "https://script.google.com/macros/s/AKfycbzmgGcLSJc50ijxHDKUCTmUPB8dhkbjAKqpgby6tvqltto-PMfC2qTDAHjoYE36-NHI/exec";
+const LOG_URL = "https://script.google.com/macros/s/AKfycbxKR03EDAl1VTOsfabueoNLoXXIpHM878qSxIdOF6FeISJq1j4KzKKVRecR_j63kk9p/exec";
 const COUNTS = [10, 20, 30];
 
 const DATA = [
