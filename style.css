@@ -1,0 +1,65 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.7;
+}
+
+main { max-width: 560px; margin: 0 auto; padding: 32px 16px; }
+
+h1 { font-size: 1.3rem; margin-bottom: 24px; }
+
+label, .label { display: block; font-size: 0.9rem; margin: 16px 0 6px; }
+
+input {
+  font: inherit;
+  font-size: 1.1rem;
+  width: 8em;
+  padding: 6px 10px;
+  border: 1px solid #999;
+}
+
+.row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+
+button {
+  font: inherit;
+  padding: 8px 18px;
+  border: 1px solid #222;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+button.sub { background: #fff; color: #222; }
+button:disabled { cursor: default; }
+
+.msg { font-size: 0.9rem; color: #c00; margin-top: 12px; min-height: 1.5em; }
+
+.top { display: flex; justify-content: space-between; font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+
+.ja { font-size: 1.05rem; margin-bottom: 4px; }
+.en { font-size: 1.3rem; margin-bottom: 24px; }
+
+.choices { display: flex; flex-direction: column; gap: 8px; }
+.choices button {
+  background: #fff;
+  color: #222;
+  border: 1px solid #999;
+  text-align: left;
+  font-size: 1.1rem;
+}
+.choices button.ok { border: 2px solid #1a7f37; color: #1a7f37; font-weight: 700; }
+.choices button.ng { border: 2px solid #c00; color: #c00; text-decoration: line-through; }
+
+.feedback { margin-top: 20px; padding-top: 16px; border-top: 1px solid #ddd; }
+.feedback .judge { font-weight: 700; margin-bottom: 6px; }
+.feedback .judge.ok { color: #1a7f37; }
+.feedback .judge.ng { color: #c00; }
+.feedback .phrase { font-size: 1.1rem; }
+.feedback .note { font-size: 0.95rem; color: #444; margin-top: 6px; }
+
+.score { font-size: 1.5rem; margin-bottom: 8px; }
+
+#review p { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+#review .head { font-weight: 700; border: none; margin-top: 16px; }

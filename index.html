@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vocabulary L7–L14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <!-- スタート画面 -->
+  <section id="start">
+    <h1>Vocabulary L7–L14</h1>
+    <label for="sid">学籍番号（4桁）</label>
+    <input id="sid" type="text" inputmode="numeric" maxlength="4" autocomplete="off">
+    <p class="label">問題数</p>
+    <div id="counts" class="row"></div>
+    <p id="startMsg" class="msg"></p>
+  </section>
+
+  <!-- 問題画面 -->
+  <section id="quiz" hidden>
+    <div class="top">
+      <span id="progress"></span>
+      <span id="lesson"></span>
+    </div>
+    <p id="ja" class="ja"></p>
+    <p id="en" class="en"></p>
+    <div id="choices" class="choices"></div>
+    <div id="feedback" class="feedback" hidden></div>
+    <div class="row">
+      <button id="backBtn" class="sub">もどる</button>
+      <button id="skipBtn" class="sub">とばす</button>
+      <button id="nextBtn" hidden>次へ</button>
+    </div>
+  </section>
+
+  <!-- 結果画面 -->
+  <section id="result" hidden>
+    <h1>結果</h1>
+    <p id="score" class="score"></p>
+    <p id="sendMsg" class="msg"></p>
+    <div id="review"></div>
+    <div class="row">
+      <button id="retryBtn">もう一度</button>
+      <button id="homeBtn" class="sub">はじめにもどる</button>
+    </div>
+  </section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
